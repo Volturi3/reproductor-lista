@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reproduciendo</title>
+</head>
+<body>
+
+    <nav class="main-reproductor">
+        <div class="inicio"></div>
+        <div class="main-container">  
+            <div class="inicio"> 
+                <h1>REPRODUCIENDO DESDE PLAYLIST</h1>
+                <h2>venus</h2>
+            </div> 
+   
+            <div class="reproductor">
+                <div class = "caratula">
+                    <img src="img/material-girl.jpg" id="caratula">
+                    <audio id="cancion" src="audio/material-girl.mp3"></audio>
+                </div>
+                <div class="texto">
+                    <h1>Material Girl</h1>
+                    <h2>Madonna</h2>
+                </div>
+                <div class="container-controles">
+                    <div class="controles">
+                        <button id="prev-btn"><span class="control mdi mdi-skip-backward"></span></button>
+                        <button id="play-btn"><span id="play-icon" class="control mdi mdi-play"></span></button>
+                        
+                        <button id="next-btn"><span class="control mdi mdi-skip-forward"></span></button>
+                        
+                    </div>
+                    <div class="barra"><input type="range" class="progress-bar" name="progress-bar" id="progress-bar" min="0" step="1"></div>
+                </div>
+                <div class="volume">
+                    <span class="control mdi mdi-volume-high"></span>
+                    <input type="range" name="volume" id="volume-control" min="0" max="1" step="0.01">
+                </div>
+            </div> 
+        </nav>   
+        <nav class="main-cola">
+            <div class="container">            
+                <div class="filters">
+                    <select id="filter-genere" class="filter-genere">
+                        <option value="all">Todos</option>
+                        <option value="rock">Rock</option>
+                        <option value="pop">Pop</option>
+                        <option value="indie">Indie</option>
+                    </select>
+                </div> 
+                <section id="list-container" class="list-container">
+                    <div class="list-item">
+                        <div class="id1"><img src="img/somebody-to-love.jpg" alt="somebody">Somebody To Love</div>
+                        <div class="id2"><img src="img/lover.jpg" alt="lover">Lover</div>
+                        <div class="id3"><img src="img/creep.jpg" alt="creep">Creep</div>
+                        <div class="id4"><img src="img/good-old-fa.jpg" alt="good-old-fa">Good Old Fashioned Lover Boy</div>
+                        <div class="id5"><img src="img/its-raining-men.jpg" alt="its-raining-men">It's Raining Men</div>
+                        <div class="id6"><img src="img/to-be-so-lonely.jpg" alt="to-be-so-lonely">To Be So Lonely</div>
+                        <div class="id7"><img src="img/lovesong.jpg" alt="lovesong">Lovesong</div>
+                        <div class="id8"><img src="img/killer-queen.jpg" alt="killer-queen">Kiler Queen</div>
+                        <div class="id9"><img src="img/nobody-knows.jpg" alt="nobody-knows">Nobody Knows</div>
+                        <div class="id10"><img src="img/why-u-only-call.jpg" alt="why-u-only-call">Why do you only call me when you are high</div>
+                        <div class="id11"><img src="img/paint-it-black.jpg" alt="paint-it-black">Paint It Black</div>
+                    </div>
+
+                </section>
+            </div>
+        </nav>
+    </div>
+
+
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
